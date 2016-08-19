@@ -1,0 +1,25 @@
+body {
+  font-family: 'Fredoka One', cursive;
+}
+
+header {
+  height: 500px;
+  width: 100%;
+  background: url('../../dist/img/pattern.svg');
+  overflow-y: hidden;
+
+  .heading-main {
+    color: #2d7034;
+    font-size: 190px;
+  }
+
+  .heading-image {
+    margin: 30px auto 0 auto;
+    display: block;    
+  }
+}
+
+.features {
+  width: 100%;
+  background-color: #d0ec9f;
+}
