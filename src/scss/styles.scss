@@ -15,7 +15,10 @@ header {
 
   .heading-image {
     margin: 30px auto 0 auto;
-    display: block;    
+    display: block;
+    -webkit-box-shadow: 0px 0px 50px 6px rgba(0,0,0,0.76);
+       -moz-box-shadow: 0px 0px 50px 6px rgba(0,0,0,0.76);
+            box-shadow: 0px 0px 50px 6px rgba(0,0,0,0.76);
   }
 }
 
