@@ -7,8 +7,8 @@ var gulp        = require('gulp'),
     prefix      = require('gulp-autoprefixer'),
     uglify      = require('gulp-uglify'),
     concat      = require('gulp-concat'),
-    rename      = require('gulp-rename'),
     imagemin    = require('gulp-imagemin'),
+    a11y        = require('gulp-a11y');,
     browserSync = require('browser-sync').create();
 
 // Static Server + watching scss/html files
@@ -50,6 +50,13 @@ gulp.task('images', function () {
   return gulp.src('src/img/**/*.+(png|jpg|gif|svg)')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img'));
+});
+
+// Accessibility audit run on HTML files.
+gulp.task('audit', function () {
+  return gulp.src('./**/*.html')
+    .pipe(a11y())
+    .pipe(a11y.reporter());
 });
 
 gulp.task('watch', function () {
