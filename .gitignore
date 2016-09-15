@@ -107,6 +107,4 @@ jspm_packages
 *.css.map
 
 # My files
-src/*
-
-index.html
+*/src/
