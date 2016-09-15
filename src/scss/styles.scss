@@ -1,5 +1,10 @@
+$body-copy: 'Open Sans', sans-serif;
+$heading-copy: 'Fredoka One', cursive;
+
+$primary-color: #2d7034;
+
 body {
-  font-family: 'Fredoka One', cursive;
+  font-family: $body-copy;
 }
 
 header {
@@ -9,7 +14,8 @@ header {
   overflow-y: hidden;
 
   .heading-main {
-    color: #2d7034;
+    font-family: $heading-copy;
+    color: $primary-color;
     font-size: 190px;
   }
 
@@ -22,7 +28,37 @@ header {
   }
 }
 
+.description__heading {
+  font-family: $heading-copy;
+  color: $primary-color;
+  text-align: center;
+}
+
 .features {
   width: 100%;
-  background-color: #d0ec9f;
+  margin-top: 50px;
+  background-color: #cdea9e;
+
+  .features__heading {
+    font-family: $heading-copy;
+    color: $primary-color;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .features__list {
+    font-size: 1.5em;
+    border: solid 2px $primary-color;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.body-copy {
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+.center-copy {
+  text-align: center;
 }

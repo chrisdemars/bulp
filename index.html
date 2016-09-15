@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Bulp | Just a basic gulp build system.</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -8,26 +8,27 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="dist/css/styles.min.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <img src="../dist/img/bulp.jpg" alt="" class="heading-image">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <img src="../dist/img/bulp.jpg" alt="This is Bulp." class="heading-image">
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-4 col-sm-12">
             <h1 class="heading-main">Bulp!</h1>
             <h2>The basic Gulp build system.</h2>
             <!-- Place this tag where you want the button to render. -->
-            <a class="github-button" href="https://github.com/chrisdemars" data-style="mega" data-count-href="/chrisdemars/followers" data-count-api="/users/chrisdemars#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @chrisdemars on GitHub">Follow @chrisdemars</a>
+            <!-- <a class="github-button" href="https://github.com/chrisdemars" data-style="mega" data-count-href="/chrisdemars/followers" data-count-api="/users/chrisdemars#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @chrisdemars on GitHub">Follow @chrisdemars</a> -->
             <!-- Place this tag where you want the button to render. -->
-            <a class="github-button" href="https://github.com/chrisdemars/bulp" data-icon="octicon-star" data-style="mega" data-count-href="/chrisdemars/bulp/stargazers" data-count-api="/repos/chrisdemars/bulp#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star chrisdemars/bulp on GitHub">Star</a>
+            <a class="github-button" href="https://github.com/chrisdemars/bulp-starter-package" data-icon="octicon-star" data-style="mega" data-count-href="/chrisdemars/bulp-starter-package/stargazers" data-count-api="/repos/chrisdemars/bulp#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star chrisdemars/bulp-starter-package on GitHub">Star</a>
             <!-- Place this tag where you want the button to render. -->
-            <a class="github-button" href="https://github.com/chrisdemars/bulp/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download chrisdemars/bulp on GitHub">Download</a>
+            <a class="github-button" href="https://github.com/chrisdemars/bulp-starter-package/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download chrisdemars/bulp on GitHub">Download</a>
           </div>
         </div>
       </div>
@@ -35,42 +36,53 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
-            <h2>Sass</h2>
-            <p></p>
-          </div>
-          <div class="col-lg-3">
-            <h2>Minification</h2>
-            <p></p>
-          </div>
-          <div class="col-lg-3">
-            <h2>Renaming</h2>
-            <p></p>
-          </div>
-          <div class="col-lg-3">
-            <h2>Autoprefixer</h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3">
-            <h2>Uglification</h2>
-            <p></p>
-          </div>
-          <div class="col-lg-3">
-            <h2>Concatenation</h2>
-            <p></p>
-          </div>
-          <div class="col-lg-3">
-            <h2>Image Minification</h2>
-            <p></p>
-          </div>
-          <div class="col-lg-3">
-            <h2>Browser Sync</h2>
-            <p></p>
+          <div class="col-md-8 col-md-offset-2">
+            <h2 class="description__heading">Basic + Gulp</h2>
+            <p class="body-copy center-copy">
+            Bulp is a basic Gulp build system that anyone can use as a boilerplate for their Web project or hybrid mobile app. It is packed with all the things you need to get you project off the ground and production ready.
+            </p>
+            <p class="body-copy center-copy">
+            Although it does not have all the bells and whistles like CSS and JavaScript linting (future feature), it does minify, concatenate, and optimize images, as well as live reload the browser using Browser Sync.
+            </p>
+            <p class="body-copy center-copy">
+            Bulp is open source so feel free to add new features and submit PR's if you feel this could benefit from this nifty package.
+            </p>
           </div>
         </div>
       </div>
+      <section class="features">
+        <h2 class="features__heading">Features</h2>
+        <div class="container">
+          <div class="row">
+          <div class="col-lg-3">
+          <h3 class="features__list">Sass</h3>
+          </div>
+          <div class="col-lg-3">
+          <h3 class="features__list">Minification</h3>
+          </div>
+          <div class="col-lg-3">
+          <h3 class="features__list">Renaming</h3>
+          </div>
+          <div class="col-lg-3">
+          <h3 class="features__list">Autoprefixer</h3>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-lg-3">
+          <h3 class="features__list">Uglification</h3>
+          </div>
+          <div class="col-lg-3">
+          <h3 class="features__list">Concatenation</h3>
+          </div>
+          <div class="col-lg-3">
+          <h3 class="features__list">Image Minification</h3>
+          </div>
+          <div class="col-lg-3">
+          <h3 class="features__list">Browser Sync</h3>
+          </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
 

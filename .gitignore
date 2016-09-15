@@ -99,11 +99,12 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-
 ### Git ###
 *.orig
-
 
 ### Sass ###
 .sass-cache/
 *.css.map
+
+# My files
+src/
