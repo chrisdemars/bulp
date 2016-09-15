@@ -108,3 +108,5 @@ jspm_packages
 
 # My files
 src/*
+
+index.html
