@@ -83,6 +83,53 @@
           </div>
         </div>
       </section>
+      <section class="install">
+        <h2 class="install__heading">Install</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="body-copy center-copy">
+              Clone or download the repo to your local machine.<br>
+              <code class="code">git clone https://github.com/chrisdemars/bulp-starter-package.git</code>
+              <br>
+              <br>
+              Change the name of the directory to whatever the name of your project is.
+              <br>
+              <code class="code">mv bulp-starter-package/ DIRNAME/</code>
+              <br>
+              <br>
+              Open the directory with the project.
+              <br>
+              <code class="code">cd DIRNAME</code>
+              <br>
+              <br>
+              Run npm install.<br>
+              <code class="code">npm install</code>
+              <br>
+              <br>
+              Open the project in your favorite editor.<br>
+              <code class="code">atom .</code>
+              <br>
+              <br>
+              <p>Open the terminal and run <code>gulp</code> so that it starts running before you start making any changes.</p>
+            </div>
+
+              <p>* Every time you start working on your project, make sure to run <code class="code">gulp</code> so all the files can be watched for changes and the tasks can run against those files.<p>
+
+              <h3>Note</h3>
+
+              <p>In the gulpfile.js, browser sync is calling chrome canary. If you don't have or use chrome canary or chrome at all, you can change it to just google chrome or whatever browser you wish.</p>
+              <br>
+              <code class="code">
+                  browserSync.init({
+                      server: './',
+                      browser: "google chrome canary"
+                  });
+              </code>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
 
