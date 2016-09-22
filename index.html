@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+    <!-- Font Awesome Icons -->
+    <script src="https://use.fontawesome.com/a45d9b8567.js"></script>
+
     <!-- Custom CSS -->
     <link href="dist/css/styles.min.css" rel="stylesheet">
   </head>
@@ -18,9 +21,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12">
-            <img src="../dist/img/bulp.jpg" alt="This is Bulp." class="heading-image">
+            <img src="../dist/img/bulp.jpg" alt="This is Bulp." class="heading-image img-responsive hidden-xs hidden-sm hidden-md">
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="col-lg-4 col-md-12 col-sm-12">
             <h1 class="heading-main">Bulp!</h1>
             <h2>The basic Gulp build system.</h2>
             <!-- Place this tag where you want the button to render. -->
@@ -42,7 +45,7 @@
             Bulp is a basic Gulp build system that anyone can use as a boilerplate for their Web project or hybrid mobile app. It is packed with all the things you need to get you project off the ground and production ready.
             </p>
             <p class="body-copy center-copy">
-            Although it does not have all the bells and whistles like CSS and JavaScript linting (future feature), it does minify, concatenate, and optimize images, as well as live reload the browser using Browser Sync.
+            Although it does not have all the bells and whistles like CSS and JavaScript linting (future feature), it does minify, concatenate, and optimize images, as well as live reload the browser using Browsersync.
             </p>
             <p class="body-copy center-copy">
             Bulp is open source so feel free to add new features and submit PR's if you feel this could benefit from this nifty package.
@@ -78,7 +81,7 @@
           <h3 class="features__list">Image Minification</h3>
           </div>
           <div class="col-lg-3">
-          <h3 class="features__list">Browser Sync</h3>
+          <h3 class="features__list">Browsersync</h3>
           </div>
           </div>
         </div>
@@ -111,28 +114,28 @@
               <code class="code">atom .</code>
               <br>
               <br>
-              <p>Open the terminal and run <code>gulp</code> so that it starts running before you start making any changes.</p>
+              <p>Open the terminal and run <code class="code">gulp</code> so that it starts running before you start making any changes.</p>
             </div>
 
               <p>* Every time you start working on your project, make sure to run <code class="code">gulp</code> so all the files can be watched for changes and the tasks can run against those files.<p>
 
               <h3>Note</h3>
 
-              <p>In the gulpfile.js, browser sync is calling chrome canary. If you don't have or use chrome canary or chrome at all, you can change it to just google chrome or whatever browser you wish.</p>
+              <p>In the gulpfile.js, Browsersync is calling chrome canary. If you don't have or use chrome canary or chrome at all, you can change it to just google chrome or whatever browser you wish.</p>
               <br>
-              <code class="code">
+              <pre class="code"><code>
                   browserSync.init({
                       server: './',
                       browser: "google chrome canary"
                   });
-              </code>
+              </code></pre>
             </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
-
+      <i class="fa fa-4x fa-github" aria-hidden="true"></i>
     </footer>
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
