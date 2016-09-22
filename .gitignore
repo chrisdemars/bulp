@@ -109,4 +109,4 @@ jspm_packages
 # My files
 src/scss/*.scss
 src/js/**/*.js
-src/img/**/*.jpg
+src/img/**/*.+(png|jpg|gif|svg)
