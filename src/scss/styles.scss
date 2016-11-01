@@ -1,0 +1,107 @@
+/* Sass Variables */
+$body-copy: 'Open Sans', sans-serif;
+$heading-copy: 'Fredoka One', cursive;
+
+$primary-color: #2d7034;
+
+body {
+  font-family: $body-copy;
+}
+
+header {
+  // height: 500px;
+  width: 100%;
+  background: url('../../dist/img/pattern.svg');
+  overflow-y: hidden;
+
+  .heading-main {
+    font-family: $heading-copy;
+    color: $primary-color;
+    font-size: 12em;
+  }
+
+  .heading-image {
+    margin: 30px auto 0 auto;
+    display: block;
+    -webkit-box-shadow: 0px 0px 50px 6px rgba(0,0,0,0.76);
+       -moz-box-shadow: 0px 0px 50px 6px rgba(0,0,0,0.76);
+            box-shadow: 0px 0px 50px 6px rgba(0,0,0,0.76);
+  }
+}
+
+.description__heading {
+  font-family: $heading-copy;
+  color: $primary-color;
+  text-align: center;
+}
+
+.features {
+  width: 100%;
+  margin-top: 50px;
+  background-color: #cdea9e;
+  padding-bottom: 50px;
+
+  .features__heading {
+    font-family: $heading-copy;
+    color: $primary-color;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .features__list {
+    font-size: 1.5em;
+    border: solid 2px $primary-color;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.install {
+  padding-bottom: 50px;
+
+  .install__heading {
+    font-family: $heading-copy;
+    color: $primary-color;
+    text-align: center;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: $primary-color;
+
+  .footer-heading {
+    font-family: $heading-copy;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+.code {
+  padding: 2px 4px;
+  font-size: 85%;
+  color: $primary-color;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+
+.body-copy {
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+.center-copy {
+  text-align: center;
+}
+
+.fa {
+  color: #000000;
+  float: right;
+}
+
+.disclaimer {
+  font-size: 1em;
+  font-style: italic;
+}
