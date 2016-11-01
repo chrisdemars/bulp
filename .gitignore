@@ -105,8 +105,3 @@ jspm_packages
 ### Sass ###
 .sass-cache/
 *.css.map
-
-# My files
-src/scss/*.scss
-src/js/**/*.js
-src/img/**/*.+(png|jpg|gif|svg)
